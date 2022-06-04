@@ -38,7 +38,7 @@ body{
 .main-header{
     display: flex;
     background-color: #000;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     flex-direction: column;
   }
@@ -49,7 +49,7 @@ body{
   }
   
   .logo{
-    height:100px;
+    height:180px;
     margin: 10px;
     z-index: 10;
   }
@@ -58,4 +58,11 @@ body{
     color: var(--txt-color);
     font-size: var(--big-title);
     padding: 30px;
+  }
+
+  /**************** Navigation ***************/
+
+  .menu-navigation-container{
+      display: flex;
+      flex-direction: column;
   }
