@@ -3,19 +3,19 @@
 
 
 :root{
-    --main-title: 60px;
-    --big-title: 40px;
-    --medium-title: 20px;
-    --small-title: 15px;
-    --para: 15px;
-    --first-color: #000;
-    --scd-color: #333;
-    --third-color: #ff8a6f;
-    --fourth-color:rgb(112, 112, 112);
-    --txt-color: #fff;
-    --bckg-color: rgb(223, 223, 223);
-    --first-font: 'Bahnschrift', sans-serif;
-    --second-font: 'Roboto', sans-serif;
+  --main-title: 60px;
+  --big-title: 40px;
+  --medium-title: 20px;
+  --small-title: 15px;
+  --para: 15px;
+  --first-color: #000;
+  --scd-color: #333;
+  --third-color: #ff8a6f;
+  --fourth-color:rgb(112, 112, 112);
+  --txt-color: #fff;
+  --bckg-color: rgb(223, 223, 223);
+  --first-font: 'Bahnschrift', sans-serif;
+  --second-font: 'Roboto', sans-serif;
 }
 
 *{
@@ -28,7 +28,7 @@
 
 body{
   font-family: var(--first-font);
-  background-color:var(--first-color);
+  background-color:var(--scd-color);
   color: var(--txt-color);
   min-height: 100vh;
 }
@@ -36,33 +36,56 @@ body{
 /********************** Header ********************/
 
 .main-header{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--first-color);
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+}
+  
+.site-head{
+  display: flex;
+  flex-direction: row;    
+}
+  
+.logo{
+  height:180px;
+  margin: 10px;
+  z-index: 10;
+}
+  
+.site-name{
+  color: var(--txt-color);
+  font-size: var(--big-title);
+  padding: 30px;
+}
+
+/**************** Navigation ***************/
+
+.menu-navigation-container{
     display: flex;
-    background-color: #000;
-    /* align-items: center; */
-    justify-content: center;
     flex-direction: column;
-  }
-  
-  .site-head{
-    display: flex;
-    flex-direction: row;    
-  }
-  
-  .logo{
-    height:180px;
-    margin: 10px;
-    z-index: 10;
-  }
-  
-  .site-name{
-    color: var(--txt-color);
-    font-size: var(--big-title);
-    padding: 30px;
-  }
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 40px);
+}
 
-  /**************** Navigation ***************/
+/*************** A propos ********************/
 
-  .menu-navigation-container{
-      display: flex;
-      flex-direction: column;
-  }
+.about-page{
+  margin-left: 200px;
+  width: calc(100vw - 200px);
+}
+
+/**************** Footer ********************/
+
+.footer{
+  display: flex;
+  background-color: var(--first-color);
+  width: 200px;
+  text-align: center;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}

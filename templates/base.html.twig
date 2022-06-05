@@ -6,7 +6,7 @@
     <title>{% block title %}Welcome!{% endblock %}</title>
     <link href="{{ asset('css/style.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    {# <link rel="icon" type="../images/logo_site.png" href="../images/logo_site.png"> #}
+    <link rel="icon" type="../images/logo.jpg" href="../images/logo.jpg">
     {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
 </head>
 
@@ -14,7 +14,7 @@
     {{include('app/_header.html.twig')}}
     {% block body %}{% endblock %}
     {# {{include('app/_top.html.twig')}} #}
-    {{include('app/_footer.html.twig')}}
+    {# {{include('app/_footer.html.twig')}} #}
     <script src="{{ asset('js/script.js')}}"></script>
 </body>
 
