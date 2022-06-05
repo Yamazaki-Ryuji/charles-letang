@@ -24,6 +24,7 @@
   text-decoration: none;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  cursor: none;
 }
 
 body{
@@ -99,11 +100,20 @@ body{
   transition: 0.5s;
 }
 
-/*************** A propos ********************/
+/*************** A propos *******************/
 
 .about-page{
   margin-left: 200px;
   width: calc(100vw - 200px);
+}
+
+/*************** Contact ********************/
+
+.contact-page{
+  max-width: 1000px;
+  padding-left: 200px;
+  display: flex;
+  margin: 0 auto;
 }
 
 /**************** Footer ********************/
@@ -116,4 +126,25 @@ body{
   height: 40px;
   align-items: center;
   justify-content: center;
+}
+
+/* Cursor */
+
+.cursor {
+  opacity: 65%;
+  position: fixed;
+  width: 0;
+  height: 0;
+  border: 10px solid var(--txt-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 0.2s, height 0.2s;
+  z-index: 100;
+}
+
+.cursor.link {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--txt-color)
 }
