@@ -104,7 +104,31 @@ body{
 
 .about-page{
   margin-left: 200px;
-  width: calc(100vw - 200px);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--first-color);
+}
+
+.about-me{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.description{
+  padding: 20px;
+}
+
+.profile{
+  height: 100vh;
+  filter: grayscale();
+  transition: 0.75s;
+}
+
+.profile:hover{
+  filter: none;
+  transition: 0.75s;
 }
 
 /*************** Contact ********************/
