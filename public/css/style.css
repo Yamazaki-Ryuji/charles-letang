@@ -10,7 +10,7 @@
   --para: 15px;
   --first-color: #000;
   --scd-color: #333;
-  --third-color: #ff8a6f;
+  --third-color: #a20404;
   --fourth-color:rgb(112, 112, 112);
   --txt-color: #fff;
   --bckg-color: rgb(223, 223, 223);
@@ -69,6 +69,34 @@ body{
     justify-content: center;
     align-items: center;
     height: calc(100% - 40px);
+}
+
+.menu-navigation-container a{
+  display: flex;
+  height: 40px;
+  width: 100%;
+  border-bottom: solid var(--scd-color) 1px;
+  align-items: center;
+  justify-content: center;
+  color: var(--txt-color);
+  font-size: var(--medium-title);
+  transition: all 0.5s;
+  background-position: 100%;
+}
+
+.menu-navigation-container a:visited{
+  color: none;
+}
+
+.menu-navigation-container a:hover {
+  color:var(--third-color) ;
+  background-image: -webkit-linear-gradient(45deg, var(--scd-color) 50%, transparent 50%);
+  background-image: linear-gradient(45deg, var(--scd-color) 50%, transparent 50%);
+  background-position: 0;
+  background-size: 400%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+  transition: 0.5s;
 }
 
 /*************** A propos ********************/
