@@ -35,6 +35,11 @@ body{
   min-height: 100vh;
 }
 
+body a:visited{
+  text-decoration: none;
+  color: var(--txt-color);
+}
+
 /********************** Header ********************/
 
 .main-header{
@@ -114,6 +119,25 @@ body{
 .about-title{
   font-size: var(--big-title);
   color: var(--fifth-color);
+  text-align: center;
+  animation: blurFadeIn 2s ease-in 0s backwards;
+}
+
+.text{
+  animation: blurFadeIn 2s ease-in 1.3s backwards;
+
+}
+
+@keyframes blurFadeIn{
+  0%{
+    opacity: 0;
+    transform: scale(1.1);
+  }
+
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .about-me{
@@ -139,36 +163,32 @@ body{
 
 .profile{
   height: 100vh;
+  overflow: hidden;
+}
+
+#profile{
   filter: grayscale();
-  transition: 0.75s;
-}
-
-.profile:hover{
-  filter: none;
-  transition: 0.75s;
-}
-
-.profile:hover.name{
-  opacity: 1;
-  transition: opacity 0.5s;
-}
-
-.effect{
+  transition: 1s;
+  animation-name: fadeIn;
+  animation-duration: 10s;
+  object-fit: contain;
   position: relative;
+  height: 100vh;
+  width: auto;
 }
 
-.name{
-  position: absolute;
-  font-size: var(--big-title);
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  transition: opacity 0.5s;
+@keyframes fadeIn{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
+ 
+#profile:hover{
+  filter: none;
+  transition: 1s;
+  transform: scale(1.2);
+  object-fit: contain;
 
-/* .name:hover{
-  visibility: visible;
-} */
+}
 
 /*************** Contact ********************/
 
