@@ -123,12 +123,18 @@ body{
 }
 
 .description{
-  padding: 20px;
+  padding: 65px;
   font-size: var(--medium-title);
 }
 
 .description a{
   color: var(--fifth-color);
+  transition: 0.5s;
+}
+
+.description a:hover{
+  color: var(--third-color);
+  transition: 0.5s;
 }
 
 .profile{
@@ -141,6 +147,28 @@ body{
   filter: none;
   transition: 0.75s;
 }
+
+.profile:hover.name{
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.effect{
+  position: relative;
+}
+
+.name{
+  position: absolute;
+  font-size: var(--big-title);
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+/* .name:hover{
+  visibility: visible;
+} */
 
 /*************** Contact ********************/
 
