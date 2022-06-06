@@ -30,7 +30,7 @@
 
 body{
   font-family: var(--first-font);
-  background-color:var(--scd-color);
+  background-color:var(--first-color);
   color: var(--txt-color);
   min-height: 100vh;
 }
@@ -110,10 +110,9 @@ body a:visited{
 
 .about-page{
   margin-left: 200px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
   background-color: var(--first-color);
+  height: calc(100% - 40px);
+
 }
 
 .about-title{
@@ -125,7 +124,6 @@ body a:visited{
 
 .text{
   animation: blurFadeIn 1.5s ease-in 1.3s backwards;
-
 }
 
 @keyframes blurFadeIn{
@@ -143,12 +141,19 @@ body a:visited{
 .about-me{
   display: flex;
   flex-direction: row;
+}
+
+.about{
+  padding: 65px 65px 0 65px;
   width: 100%;
 }
 
-.description{
-  padding: 65px;
-  font-size: var(--medium-title);
+.description{  
+  font-size: var(--small-title);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .description a{
@@ -163,31 +168,18 @@ body a:visited{
 
 .profile{
   height: 100vh;
-  overflow: hidden;
-}
-
-#profile{
+  object-fit: cover;
   filter: grayscale();
-  transition: 1s;
-  animation-name: fadeIn;
-  animation-duration: 10s;
-  object-fit: contain;
-  position: relative;
-  height: 100vh;
   width: auto;
-}
-
-@keyframes fadeIn{
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  overflow: hidden;
+  transition: 1s;
 }
  
-#profile:hover{
+.profile:hover{
   filter: none;
   transition: 1s;
-  transform: scale(1.1);
-  object-fit: contain;
 }
+
 
 /*************** Contact ********************/
 
@@ -211,7 +203,7 @@ body a:visited{
   justify-content: center;
 }
 
-/* Cursor */
+/***************** Cursor *******************/
 
 .cursor {
   opacity: 65%;
@@ -235,12 +227,14 @@ body a:visited{
 /*********** Skills sphere *****************/
 
 .tagcloud {
-    font-family: 'Poppins', sans-serif;  
-    font-size: 20px;
-    margin: auto;
-    width: 50%;
+  font-family:var(--first-font);  
+  font-size: 20px;
+  margin: auto;
+  width: 50%;
+  transition: 0.5s;
 }
 
 .tagcloud--item:hover {
   color: #36454F;
+  transition: 0.5s;
 }

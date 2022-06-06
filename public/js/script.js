@@ -23,7 +23,7 @@ links.forEach((link) => {
 
 const myTags = [
    'JavaScript', 'CSS', 'HTML',
-   'Python', 'Java', 'git',
+   'Python', 'Java', 'git', 'npm', 
    'Node.js', 'MySQL', 'Wordpress', 'PHP', 
    'Symphony', 'Photoshop', 'Illustrator',
    'InDesign', 'Adobe XD'
@@ -32,7 +32,7 @@ const myTags = [
 var tagCloud = TagCloud('.content', myTags,{
 
  // radius in px
- radius: 250,
+radius: 200,
 
  // animation speed
  // slow, normal, fast
