@@ -32,7 +32,7 @@ const myTags = [
 var tagCloud = TagCloud('.content', myTags,{
 
  // radius in px
-radius: 200,
+radius: 195,
 
  // animation speed
  // slow, normal, fast
