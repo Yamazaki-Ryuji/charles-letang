@@ -1,4 +1,4 @@
-/* Cursor */
+/*********  Cursor ************/
 
 const cursor = document.querySelector(".cursor")
 
@@ -23,10 +23,10 @@ links.forEach((link) => {
 
 const myTags = [
    'JavaScript', 'CSS', 'HTML',
-   'Python', 'Java', 'git', 'npm', 
-   'Node.js', 'MySQL', 'Wordpress', 'PHP', 
-   'Symphony', 'Photoshop', 'Illustrator',
-   'InDesign', 'Adobe XD'
+   'Python', 'Java', 'git', 'npm', '🐈‍⬛', 
+   'Node.js', 'MySQL', 'Wordpress',
+   'PHP', 'Symphony', 'Photoshop',
+   'Illustrator', 'InDesign', 'Adobe XD'
 ];
 
 var tagCloud = TagCloud('.content', myTags,{
@@ -50,6 +50,17 @@ radius: 200,
 });
 
 //To change the color of text randomly
-var colors = ['#34A853', '#FBBC05', '#4285F4', '#7FBC00', 'FFBA01', '01A6F0'];
+var colors = ['#a20404', '#6D7CAF', '#fff', '#2043b3', '#027c02', '#e7c500'];
 var random_color = colors[Math.floor(Math.random() * colors.length)];
 document.querySelector('.content').style.color = random_color;
+
+/********** Burger menu **************/
+
+function myFunction() {
+   var x = document.getElementById("myNavigation");
+   if (x.className === "mainmenu") {
+     x.className += "-responsive";
+   } else {
+     x.className = "mainmenu";
+   }
+ }
