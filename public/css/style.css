@@ -122,8 +122,22 @@ body a:visited{
   animation: blurFadeIn 1.5s ease-in 0s backwards;
 }
 
+.about-me{
+  display: flex;
+  flex-direction: row;
+}
+
+.about{
+  padding: 65px 65px 0 65px;
+  width: 100%;
+}
+
 .text{
   animation: blurFadeIn 1.5s ease-in 1.3s backwards;
+}
+
+.content{
+  animation: blurFadeIn 1.5s ease-in 2.2s backwards;
 }
 
 @keyframes blurFadeIn{
@@ -136,16 +150,6 @@ body a:visited{
     opacity: 1;
     transform: scale(1);
   }
-}
-
-.about-me{
-  display: flex;
-  flex-direction: row;
-}
-
-.about{
-  padding: 65px 65px 0 65px;
-  width: 100%;
 }
 
 .description{  
@@ -186,6 +190,18 @@ body a:visited{
   transition: 1s;
 }
 
+/*********** Skills sphere *****************/
+
+.tagcloud {
+  font-family:var(--first-font);  
+  font-size: 20px;
+  margin: auto;
+  width: 50%;
+}
+
+.tagcloud--item:hover {
+  color: #36454F;
+}
 
 /*************** Contact ********************/
 
@@ -230,17 +246,3 @@ body a:visited{
   border: 2px solid var(--txt-color)
 }
 
-/*********** Skills sphere *****************/
-
-.tagcloud {
-  font-family:var(--first-font);  
-  font-size: 20px;
-  margin: auto;
-  width: 50%;
-  transition: 0.5s;
-}
-
-.tagcloud--item:hover {
-  color: #36454F;
-  transition: 0.5s;
-}
