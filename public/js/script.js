@@ -58,9 +58,9 @@ document.querySelector('.content').style.color = random_color;
 
 function myFunction() {
    var x = document.getElementById("myNavigation");
-   if (x.className === "mainmenu") {
+   if (x.className === "menunavigationcontainer") {
      x.className += "-responsive";
    } else {
-     x.className = "mainmenu";
+     x.className = "menunavigationcontainer";
    }
  }
