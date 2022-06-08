@@ -329,7 +329,7 @@ body a:visited{
 .contact-form{
   position: relative;
   padding-top: 30px;
-  max-width: 500px;
+  max-width: 750px;
   min-height: 500px;
 }
 
@@ -348,7 +348,7 @@ body a:visited{
   padding-top: 20px;
 }
 
-.form-control-name-field, .form-control-mail-field{
+.form-control-name-field, .form-control-mail-field, .form-control-subject-field{
   width: 100%;
   height: 30px;
   border: none;
@@ -370,7 +370,6 @@ body a:visited{
 
 input::placeholder, textarea::placeholder{
   color: var(--first-color);
-
 }
 
 .submit-button{
@@ -402,6 +401,25 @@ input::placeholder, textarea::placeholder{
   .contact-page{
     margin: 10px !important;
   }
+
+  .confirmation-page{
+    padding: 40px 20px 20px 20px!important;
+  }
+}
+
+.confirmation-page{
+  padding-left: 200px;
+  padding-top: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.confirmation-page a{
+  color: var(--fifth-color) !important;
+}
+
+.confirmation-page a:hover{
+  color: var(--third-color) !important;
 }
 
 /**************** Footer ********************/

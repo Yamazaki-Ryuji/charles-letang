@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Message envoyé{% endblock %}
+
+{% block body %}
+
+<div class="confirmation-page">
+    <p>
+        Votre message a été envoyé.<br>
+        Merci de m'avoir contacté.<br>
+        <a href="{{ path('home') }}">Retour à l'accueil</a>
+    </p>
+        {# <div id="container">
+          <div id="flip">
+            <div>Merci</div>
+            <div>Thank you</div>
+            <div>Danke schön</div>
+            <div>Muchas gracias</div>
+            <div>Grazie mille</div>
+            <div>ありがとうございました</div>
+          </div>
+        </div> #}
+</div>
+
+{% endblock %}
