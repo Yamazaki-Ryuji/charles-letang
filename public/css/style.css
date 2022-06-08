@@ -13,6 +13,7 @@
   --third-color: #a20404;
   --fourth-color:#707070;
   --fifth-color:#6D7CAF;
+  --sixth-color:#abb5d6;
   --txt-color: #fff;
   --bckg-color: #dfdfdf;
   --sphr-color-1: #a20404;
@@ -354,7 +355,7 @@ body a:visited{
   border-radius: 5px;
   padding: 5px;
   font-family: 'Bahnschrift';
-  background-color: var(--fifth-color);
+  background-color: var(--sixth-color);
 }
 
 .form-control-message-field{
@@ -364,7 +365,7 @@ body a:visited{
   border-radius: 5px;
   padding: 5px;
   font-family: 'Bahnschrift';
-  background-color: var(--fifth-color);
+  background-color: var(--sixth-color);
 }
 
 input::placeholder, textarea::placeholder{
@@ -389,6 +390,12 @@ input::placeholder, textarea::placeholder{
 .submit-button:hover{
   transition: 0.5s;
   background-color: var(--third-color);
+}
+
+.mentions{
+  max-width: 500px;
+  /* text-align: center; */
+  padding: 10px;
 }
 
 @media screen and (max-width :768px) {
