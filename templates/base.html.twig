@@ -10,12 +10,13 @@
     <title>{% block title %}Welcome!{% endblock %}</title>
     <link href="{{ asset('css/style.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="../images/logo.jpg" href="../images/logo.jpg">
+    <link rel="icon" type="../images/logo.jpg" href="../images/logo.jpg">    
     {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
 </head>
 
 <body>
     {{include('app/_header.html.twig')}}
+    {# {{include('app/_header-en.html.twig')}} #}
     {% block body %}{% endblock %}
     {# {{include('app/_top.html.twig')}} #}
     {# {{include('app/_footer.html.twig')}} #}

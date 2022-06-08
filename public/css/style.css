@@ -129,10 +129,6 @@ body a:visited{
 
   .menunavigationcontainer{
     display: none;
-  }
-
-  .menunavigationcontainer{
-    display: none;
     flex-direction: column;
     align-items: center;
     transition: height 0.5s;
@@ -143,6 +139,11 @@ body a:visited{
     flex-direction: column;
     align-items: center;
     transition: height 0.5s;
+  }
+
+  .menunavigationcontainer-responsive a:hover{
+    color: var(--fifth-color);
+    transition: 0.5s;
   }
 
   .icon{
@@ -360,3 +361,8 @@ body a:visited{
   border: 2px solid var(--txt-color)
 }
 
+/**************** Accueil ************/
+
+.work-container{
+  margin-left: 200px;
+}

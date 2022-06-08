@@ -1,0 +1,22 @@
+<header>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <div class="cursor"></div>
+    <div class="main-header">
+        <div class="site-head">
+            <img src="{{asset('images/logo.jpg')}}" alt="logo" class="logo">
+                {# <h1 class="site-name">Charles Létang</h1> #}
+        </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            <div class="menunavigationcontainer" id="myNavigation">
+                {# <div class="mainmenu" > #}
+                    <a href="{{ path('home') }}">Home</a>
+                    <a href="{{ path('about') }}">About</a>
+                    <a href="{{ path('work') }}">Works</a>
+                    <a href="{{ path('contact') }}">Contact</a>
+                {# </div> #}
+            </div>
+        <div class="footer">© 2022 Charles Létang</div>    
+    </div>
+</header>
