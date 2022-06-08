@@ -321,10 +321,80 @@ body a:visited{
 /*************** Contact ********************/
 
 .contact-page{
-  max-width: 1000px;
-  padding-left: 200px;
-  display: flex;
-  margin: 0 auto;
+  margin-left: 200px;
+  padding: 30px;
+}
+
+.contact-form{
+  position: relative;
+  padding-top: 30px;
+  max-width: 500px;
+  min-height: 500px;
+}
+
+.contact-form h2{
+  color: var(--txt-color);
+  font-size: var(--medium-title);
+  padding: 0 10px;
+}
+
+.form-group{
+  padding: 5px 10px 5px 10px;
+  max-width: 500px;
+}
+
+.contact-fields{
+  padding-top: 20px;
+}
+
+.form-control-name-field, .form-control-mail-field{
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: 'Bahnschrift';
+  background-color: var(--fifth-color);
+}
+
+.form-control-message-field{
+  width: 100%;
+  height: 250px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: 'Bahnschrift';
+  background-color: var(--fifth-color);
+}
+
+input::placeholder, textarea::placeholder{
+  color: var(--first-color);
+
+}
+
+.submit-button{
+  position: absolute;
+  right: 0;
+  background-color: var(--scd-color);
+  color: var(--txt-color);
+  border: none;
+  border-radius: 5px;
+  width: 120px;
+  height: 40px;
+  margin: 0 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.submit-button:hover{
+  transition: 0.5s;
+  background-color: var(--third-color);
+}
+
+@media screen and (max-width :768px) {
+  .contact-page{
+    margin: 10px !important;
+  }
 }
 
 /**************** Footer ********************/

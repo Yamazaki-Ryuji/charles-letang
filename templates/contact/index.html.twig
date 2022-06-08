@@ -6,24 +6,24 @@
 {% block body %}
     <div class="contact-page">
         <div class="contact-form">
-        <h2>Une question ? Un renseignement ? N'hésitez pas à m'envoyer un message</h2>
-            <div class="contact-fields">
-                <div class="form-group name">
-                    {{ form_start(our_form) }}
-                    {{ form_row(our_form.fullName, {'attr': {'class': 'form-control-name-field'}}) }}
+            <h2>Une question ? Un renseignement ? N'hésitez pas à m'envoyer un message</h2>
+                <div class="contact-fields">
+                    <div class="form-group name">
+                        {{ form_start(our_form) }}
+                        {{ form_row(our_form.fullName, {'attr': {'class': 'form-control-name-field'}}) }}
+                    </div>
+                    <div class="form-group mail">
+                        {{ form_row(our_form.email, {'attr': {'class': 'form-control-mail-field'}}) }}
+                    </div>
+                    <div class="form-group message">
+                        {{ form_row(our_form.message, {'attr': {'class': 'form-control-message-field'}}) }}
+                    </div>
                 </div>
-                <div class="form-group mail">
-                    {{ form_row(our_form.email, {'attr': {'class': 'form-control-mail-field'}}) }}
-                </div>
-                <div class="form-group message">
-                    {{ form_row(our_form.message, {'attr': {'class': 'form-control-message-field'}}) }}
-                </div>
-            </div>
-                <div class="form-group submit">
-                    <input type="submit" value="Envoyer" class="submit-button">
-                </div>
-                {{ form_end(our_form) }}
-                </div>
+                    <div class="form-group submit">
+                        <input type="submit" value="Envoyer" class="submit-button">
+                    </div>
+                    {{ form_end(our_form) }}
+                    </div>
         </div>
     </div>    
 {% endblock %}
