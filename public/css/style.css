@@ -22,7 +22,6 @@
   --sphr-color-5: #027c02;
   --sphr-color-6: #e7c500;
   --sphr-color-7: #36454F;
-
   --first-font: 'Bahnschrift', sans-serif;
   --second-font: 'Roboto', sans-serif;
 }
@@ -99,7 +98,7 @@ body a:visited{
 }
 
 .menunavigationcontainer a:visited{
-  color: none;
+  color: var(--txt-color);
 }
 
 .menunavigationcontainer a:hover {
