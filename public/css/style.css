@@ -334,9 +334,9 @@ body a:visited{
   animation: fadein 4s;
 }
 
-.contact-form h2{
+.contact-form p{
   color: var(--txt-color);
-  font-size: var(--medium-title);
+  font-size: var(--small-title);
   padding: 0 10px;
 }
 
