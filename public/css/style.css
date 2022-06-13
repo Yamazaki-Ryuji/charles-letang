@@ -466,7 +466,8 @@ input::placeholder, textarea::placeholder{
 
 .home-container{
   animation: fadein 4s;
-  padding-top: 200px;
+  padding-top: 155px;
+  padding-left: 110px;
 }
 
 /* .rw-wrapper{
@@ -672,7 +673,7 @@ input::placeholder, textarea::placeholder{
 .rw-sentence > span:first-child{
 	top: 0px;
 	left: 140px;
-	font-size: 700%;
+	font-size: 600%;
 	color: rgba(187,177,168,0.6);
 }
 .rw-sentence > span:nth-child(2){
@@ -688,7 +689,7 @@ input::placeholder, textarea::placeholder{
 	color: rgba(255,255,255,0.8);
 }
 .rw-sentence > span:last-child{
-	top: 435px;
+	top: 450px;
 	left: 550px;
 	font-size: 200%;
 	color: rgba(237,234,168, 0.9);
@@ -696,7 +697,7 @@ input::placeholder, textarea::placeholder{
 .rw-words{
 	position: absolute;
 	left: 220px;
-	top: 220px;
+	top: 235px;
 	height: 80px;
 	width: 400px;
 	-webkit-perspective: 800px;
@@ -704,7 +705,7 @@ input::placeholder, textarea::placeholder{
 }
 .rw-words span{
 	position: absolute;
-	font-size: 800%;
+	font-size: 700%;
 	color: transparent;
 	text-shadow: 0px 0px 80px rgba(255,255,255,1);
 	opacity: 0;
