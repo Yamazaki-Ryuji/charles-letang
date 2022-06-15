@@ -383,6 +383,14 @@ input::placeholder, textarea::placeholder{
   border-left: solid 3px green;
 }
 
+.form-control-name-field:invalid, 
+.form-control-mail-field:invalid, 
+.form-control-subject-field:invalid,
+.form-control-message-field:invalid{
+  color: var(--third-color)
+} 
+
+
 .form-control-name-field:focus, 
 .form-control-mail-field:focus,
 .form-control-subject-field:focus, 
@@ -391,8 +399,7 @@ input::placeholder, textarea::placeholder{
 }
 
 input:focus::-webkit-input-placeholder, 
-textarea:focus::-webkit-input-placeholder, 
-input:valid::-webkit-input-placeholder{
+textarea:focus::-webkit-input-placeholder{
   color: var(--txt-color);
 }
 
@@ -412,6 +419,11 @@ button{
 button:hover{
   transition: 0.5s;
   background-color: var(--sphr-color-7);
+}
+
+title{
+  display: block;
+  background-color: red;
 }
 
 .mentions{

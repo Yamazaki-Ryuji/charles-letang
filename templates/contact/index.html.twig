@@ -10,22 +10,31 @@
                 Si vous avez une question ou besoin d'un renseignement,<br> 
                 n'hésitez pas à m'envoyer un message</p>
                 <div class="contact-fields">
-                    <div class="form-group name">
+                    <div class="form-group name" title="Saisissez votre nom">
                         {{ form_start(our_form) }}
-                        {{ form_row(our_form.fullName, {'attr': {'class': 'form-control-name-field'}}) }}
+                        {{ form_row(our_form.fullName, {'attr': {'class': 'form-control-name-field', 
+                        'oninvalid': "setCustomValidity('Veuillez saisir votre nom')", 
+                        'oninput': "setCustomValidity('')"}}) }}
                     </div>
-                    <div class="form-group mail">
-                        {{ form_row(our_form.email, {'attr': {'class': 'form-control-mail-field'}}) }}
+                    <div class="form-group mail" for="email" type="email" data-min="8" data-max="255" title="Saisissez votre e-mail">
+                        {{ form_row(our_form.email, {'attr': {'class': 'form-control-mail-field js-verif-email', 
+                        'type': 'email', 'data-min': '8', 'data-max': '255',
+                        'oninvalid': "setCustomValidity('Veuillez saisir une adresse email')", 
+                        'oninput': "setCustomValidity('')"}}) }}
                     </div>
-                    <div class="form-group subject">
-                        {{ form_row(our_form.subject, {'attr': {'class': 'form-control-subject-field'}}) }}
+                    <div class="form-group subject" title="Saisissez le sujet de votre message">
+                        {{ form_row(our_form.subject, {'attr': {'class': 'form-control-subject-field', 
+                        'oninvalid': "setCustomValidity('Veuillez saisir un sujet')", 
+                        'oninput': "setCustomValidity('')"}}) }}
                     </div>
-                    <div class="form-group message">
-                        {{ form_row(our_form.message, {'attr': {'class': 'form-control-message-field'}}) }}
+                    <div class="form-group message" title="Saisissez votre message">
+                        {{ form_row(our_form.message, {'attr': {'class': 'form-control-message-field', 
+                        'oninvalid': "setCustomValidity('Veuillez saisir un message')", 
+                        'oninput': "setCustomValidity('')"}}) }}
                     </div>
                 </div>
                     <div class="form-group submit">
-                        <a><button type="submit" value="Envoyer" class="submit-button">Envoyer</button></a>
+                        <a><button type="submit" value="Envoyer" class="submit-button" onclick="ValidateEmail(document.form1.text1)">Envoyer</button></a>
                     </div>
                     <div>
                     {{ form_end(our_form) }}
