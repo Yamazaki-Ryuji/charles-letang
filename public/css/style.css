@@ -331,7 +331,6 @@ body a:visited{
   padding-top: 30px;
   max-width: 650px;
   min-height: 500px;
-  animation: fadein 4s;
 }
 
 .contact-form p{
@@ -376,11 +375,25 @@ input::placeholder, textarea::placeholder{
   color: var(--fifth-color);
 }
 
-.form-control-name-field:focus, .form-control-name-field:valid, 
-.form-control-mail-field:focus, .form-control-mail-field:valid, 
-.form-control-subject-field:focus, .form-control-subject-field:valid,
-.form-control-message-field:valid, .form-control-message-field:focus{
+.form-control-name-field:valid, 
+.form-control-mail-field:valid, 
+.form-control-subject-field:valid,
+.form-control-message-field:valid{
   color: var(--fifth-color);
+  border-left: solid 3px green;
+}
+
+.form-control-name-field:focus, 
+.form-control-mail-field:focus,
+.form-control-subject-field:focus, 
+.form-control-message-field:focus{
+  color: var(--txt-color);
+}
+
+input:focus::-webkit-input-placeholder, 
+textarea:focus::-webkit-input-placeholder, 
+input:valid::-webkit-input-placeholder{
+  color: var(--txt-color);
 }
 
 /* input:focus, input:valid,
@@ -392,7 +405,7 @@ textarea:focus, textarea:valid{
 button{
   position: absolute;
   right: 0;
-  background-color: var(--scd-color);
+  background-color: var(--fifth-color);
   color: var(--txt-color);
   border: none;
   border-radius: 5px;
@@ -404,7 +417,7 @@ button{
 
 button:hover{
   transition: 0.5s;
-  background-color: var(--third-color);
+  background-color: var(--sphr-color-7);
 }
 
 .mentions{
