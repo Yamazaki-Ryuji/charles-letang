@@ -643,10 +643,13 @@ title{
   color: var(--fifth-color);
   text-align: justify;
   padding: 30px;
+  letter-spacing: 0.5px;
+  line-height: 130%;
 }
 
-.privacy-page h1, h2{
+.privacy-page h1, .privacy-page h2{
   text-align: center;
+  line-height: 120%;
 }
 
 .privacy-page li{
