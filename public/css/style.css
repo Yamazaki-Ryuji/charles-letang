@@ -595,6 +595,26 @@ title{
   color: var(--third-color) !important;
 }
 
+.rgpd{
+  padding: 30px;
+}
+
+.form-control-check-field{
+  cursor: pointer;
+  margin: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
+.form-control-check-field:checked{
+  color: var(--third-color);
+}
+
+.contact-page .required{
+  color: var(--fifth-color);
+}
+
 /**************** Footer ********************/
 
 .footer{

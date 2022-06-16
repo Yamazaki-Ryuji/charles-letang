@@ -32,7 +32,7 @@ class ContactType extends AbstractType
                 'attr' => ['placeholder' => 'Votre message']
             ])
             ->add('check', CheckboxType::class, [
-                'label' => false, 
+                'label' => 'En cochant cette case, vous acceptez la politique de confidentialité.' 
             ])
         ;
     }

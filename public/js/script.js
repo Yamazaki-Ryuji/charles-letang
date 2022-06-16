@@ -159,7 +159,7 @@ function verif_form(form_selecteur,param_insert){
 		}
 	}
 	document.querySelectorAll(form_selecteur).forEach(function(elform){
-		// vérification du nombre de caractere
+		// vérification du nombre de caracteres
 		elform.querySelectorAll(param.input_verif_text).forEach(function(el){
 			if(param.onkeyup){
 				el.onkeyup=function(){verif_nbcara(this);}

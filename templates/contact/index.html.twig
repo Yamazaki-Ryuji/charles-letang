@@ -10,9 +10,10 @@
                 Si vous avez une question ou besoin d'un renseignement,<br> 
                 n'hésitez pas à m'envoyer un message</p>
                 <div class="contact-fields">
-                    <div class="form-group name" title="Saisissez votre nom">
+                    <div class="form-group name js-verif-text" title="Saisissez votre nom" type="name" data-min="2" data-max="255">
                         {{ form_start(our_form) }}
                         {{ form_row(our_form.fullName, {'attr': {'class': 'form-control-name-field', 
+                        'type': 'name', 'data-min': '2', 'data-max': '255',
                         'oninvalid': "setCustomValidity('Veuillez saisir votre nom')", 
                         'oninput': "setCustomValidity('')"}}) }}
                     </div>
@@ -33,8 +34,8 @@
                         'oninput': "setCustomValidity('')"}}) }}
                     </div>
                     <div class="rgpd" title="Politique de confidentialité">
-                        <a><label type="checkbox" class="js-verif-rgpd" required="required"></a>
-                        En cochant cette case, j'accepte la <a class="confidentiality" href="{{ path('privacy') }}">politique de confidentialité</a>
+                        {# <a><label type="checkbox" class="js-verif-rgpd" required="required"></a>
+                        En cochant cette case, j'accepte la <a class="confidentiality" href="{{ path('privacy') }}">politique de confidentialité</a> #}
                         {{ form_row(our_form.check, {'attr': {'class': 'form-control-check-field', 
                         'oninvalid': "setCustomValidity('Veuillez accepter la politique de confidentialité')", 
                         'oninput': "setCustomValidity('')"}}) }}
