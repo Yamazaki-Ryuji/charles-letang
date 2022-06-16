@@ -32,9 +32,16 @@
                         'oninvalid': "setCustomValidity('Veuillez saisir un message')", 
                         'oninput': "setCustomValidity('')"}}) }}
                     </div>
+                    <div class="rgpd" title="Politique de confidentialité">
+                        <a><label type="checkbox" class="js-verif-rgpd" required="required"></a>
+                        En cochant cette case, j'accepte la <a class="confidentiality" href="{{ path('privacy') }}">politique de confidentialité</a>
+                        {{ form_row(our_form.check, {'attr': {'class': 'form-control-check-field', 
+                        'oninvalid': "setCustomValidity('Veuillez accepter la politique de confidentialité')", 
+                        'oninput': "setCustomValidity('')"}}) }}
+                    </div>
                 </div>
                     <div class="form-group submit">
-                        <a><button type="submit" value="Envoyer" class="submit-button" onclick="ValidateEmail(document.form1.text1)">Envoyer</button></a>
+                        <a><button type="submit" value="Envoyer" class="submit-button">Envoyer</button></a>
                     </div>
                     <div>
                     {{ form_end(our_form) }}
