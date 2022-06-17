@@ -10,14 +10,14 @@
                 Si vous avez une question ou besoin d'un renseignement,<br> 
                 n'hésitez pas à m'envoyer un message</p>
                 <div class="contact-fields">
-                    <div class="form-group name js-verif-text" title="Saisissez votre nom" type="name" data-min="2" data-max="255">
+                    <div class="form-group name" title="Saisissez votre nom">
                         {{ form_start(our_form) }}
                         {{ form_row(our_form.fullName, {'attr': {'class': 'form-control-name-field', 
                         'type': 'name', 'data-min': '2', 'data-max': '255',
                         'oninvalid': "setCustomValidity('Veuillez saisir votre nom')", 
                         'oninput': "setCustomValidity('')"}}) }}
                     </div>
-                    <div class="form-group mail" for="email" type="email" data-min="8" data-max="255" title="Saisissez votre e-mail">
+                    <div class="form-group mail" title="Saisissez votre e-mail">
                         {{ form_row(our_form.email, {'attr': {'class': 'form-control-mail-field js-verif-email', 
                         'type': 'email', 'data-min': '8', 'data-max': '255',
                         'oninvalid': "setCustomValidity('Veuillez saisir une adresse email')", 
