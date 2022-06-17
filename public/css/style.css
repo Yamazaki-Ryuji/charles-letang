@@ -177,6 +177,14 @@ body a:visited{
   padding-left: 110px;
 }
 
+#myVideo{
+  width: 1920px;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  opacity: 0.5;
+}
+
 .rw-wrapper{
 	width: 80%;
 	position: relative;
@@ -472,6 +480,11 @@ body a:visited{
   min-height: 500px;
 }
 
+.contact-page li{
+  color: var(--third-color);
+  list-style: none;
+}
+
 .contact-form p{
   color: var(--fifth-color);
   font-size: var(--small-title);
@@ -636,13 +649,7 @@ title{
   margin-left: 200px;
 }
 
-#myVideo{
-  width: 1920px;
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  opacity: 0.5;
-}
+
 
 
 /***************** Cursor *******************/

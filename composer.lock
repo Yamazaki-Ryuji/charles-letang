@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3cc63ca93366f8f54edbcf2da0f80b46",
+    "content-hash": "e68fcfd77c672da608073ef811c5d845",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -3909,6 +3909,76 @@
                 }
             ],
             "time": "2022-05-27T06:29:07+00:00"
+        },
+        {
+            "name": "symfony/free-mobile-notifier",
+            "version": "v5.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/free-mobile-notifier.git",
+                "reference": "0399b170eaf8f24084f969a4511dc93688155b05"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/free-mobile-notifier/zipball/0399b170eaf8f24084f969a4511dc93688155b05",
+                "reference": "0399b170eaf8f24084f969a4511dc93688155b05",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.5",
+                "symfony/http-client": "^4.3|^5.1|^6.0",
+                "symfony/notifier": "^5.3|^6.0"
+            },
+            "type": "symfony-notifier-bridge",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Notifier\\Bridge\\FreeMobile\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Antoine Makdessi",
+                    "email": "amakdessi@me.com",
+                    "homepage": "http://antoine.makdessi.free.fr"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Free Mobile Notifier Bridge",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "FreeMobile",
+                "alerting",
+                "notifier",
+                "sms"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/free-mobile-notifier/tree/v5.4.3"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-01-26T16:28:35+00:00"
         },
         {
             "name": "symfony/http-client",

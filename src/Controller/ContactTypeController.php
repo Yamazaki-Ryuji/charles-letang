@@ -9,6 +9,19 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Egulias\EmailValidator\EmailValidator as EguliasEmailValidator;
+use Egulias\EmailValidator\Validation\EmailValidation;
+use Egulias\EmailValidator\Validation\NoRFCWarningsValidation;
+use Symfony\Component\Validator\Constraint;
+use Symfony\Component\Validator\ConstraintValidator;
+use Symfony\Component\Validator\Constraints\Length;
+use Symfony\Component\Validator\Constraints\Type;
+use Symfony\Component\Validator\Constraints\Hostname;
+use Symfony\Component\Validator\Exception\UnexpectedTypeException;
+use Symfony\Component\Validator\Exception\UnexpectedValueException;
+use Symfony\Component\Validator\Exception\InvalidArgumentException;
+use Symfony\Component\Validator\Exception\LogicException;
+use Egulias\EmailValidator\EmailValidator as StrictEmailValidator;
 
 class ContactType extends AbstractType
 {
@@ -17,11 +30,13 @@ class ContactType extends AbstractType
         $builder
             ->add('fullName',TextType::class, [
                 'label' => false,
-                'attr' => ['placeholder' => 'Votre nom']
+                'attr' => ['placeholder' => 'Votre nom'], 
+                'constraints' => new Length(['min' =>'2', 'max' => '35'])
             ])
             ->add('email',EmailType::class, [
                 'label' => false,
-                'attr' => ['placeholder' => 'Votre email']
+                'attr' => ['placeholder' => 'Votre email'], 
+                'constraints' => new Hostname()
             ])
             ->add('subject',TextType::class, [
                 'label' => false,
