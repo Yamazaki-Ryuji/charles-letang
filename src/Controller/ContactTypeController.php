@@ -17,6 +17,8 @@ use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\Type;
 use Symfony\Component\Validator\Constraints\Email;
 use Symfony\Component\Validator\Constraints\Hostname;
+use Symfony\Component\Validator\Constraints\Collection;
+use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\Validator\Exception\UnexpectedTypeException;
 use Symfony\Component\Validator\Exception\UnexpectedValueException;
 use Symfony\Component\Validator\Exception\InvalidArgumentException;
@@ -40,7 +42,7 @@ class ContactType extends AbstractType
             ->add('email',EmailType::class, [
                 'label' => false,
                 'attr' => ['placeholder' => 'Votre email'], 
-                'constraints' => [new Email(), new Hostname]
+                'constraints' => new Hostname()
             ])
             ->add('subject',TextType::class, [
                 'label' => false,
