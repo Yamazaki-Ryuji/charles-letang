@@ -39,7 +39,7 @@ class ContactType extends AbstractType
             ->add('email',EmailType::class, [
                 'label' => false,
                 'attr' => ['placeholder' => 'Votre email'], 
-                'constraints' => new Hostname(['requireTld' => true])
+                'constraints' => new Email(['mode' => 'strict'])
             ])
             ->add('subject',TextType::class, [
                 'label' => false,
