@@ -118,6 +118,11 @@ body a:visited{
   display: none;
 }
 
+.social-links{
+  display: flex;
+  flex-direction: row;
+}
+
 @media screen and (max-width :768px){
   .main-header{
     display: flex;
