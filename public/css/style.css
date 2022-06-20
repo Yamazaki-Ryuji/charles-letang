@@ -476,6 +476,9 @@ body a:visited{
 .contact-page{
   margin-left: 200px;
   padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .contact-form{
@@ -583,6 +586,12 @@ title{
   background-color: red;
 }
 
+.codecat{
+  width: 650px;
+  height: auto;
+  padding: 40px;
+}
+
 .mentions{
   max-width: 500px;
   /* text-align: center; */
@@ -592,6 +601,15 @@ title{
 @media screen and (max-width :768px) {
   .contact-page{
     margin: 10px !important;
+    flex-direction: column;
+  }
+
+  .cat{
+    margin: 0 auto;
+  }
+
+  .codecat{
+    width: 100%;
   }
 
   .confirmation-page{
