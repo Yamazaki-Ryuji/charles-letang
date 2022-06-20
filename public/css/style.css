@@ -586,8 +586,12 @@ title{
   background-color: red;
 }
 
+.cat{
+  margin-left: 30px;
+}
+
 .codecat{
-  width: 650px;
+  width: 620px;
   height: auto;
   padding: 40px;
 }
