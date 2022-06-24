@@ -123,6 +123,12 @@ body a:visited{
   flex-direction: row;
 }
 
+.social-links a{
+  margin: 8px;
+  font-size: 20px;
+  color: var(--txt-color);
+}
+
 @media screen and (max-width :768px){
   .main-header{
     display: flex;
@@ -171,6 +177,34 @@ body a:visited{
 
   #myNavigation{
     font-size: var(--medium-title);
+  }
+}
+
+/**************** Footer ********************/
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--first-color);
+  color: var(--fifth-color) !important;
+  width: 200px;
+  text-align: center;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width :768px) {
+  .footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    flex-direction: row;
+  }
+  
+  .foot{
+    margin-left: 8px;
   }
 }
 
@@ -466,9 +500,9 @@ body a:visited{
     width: 100% !important;
   }
 
-  .footer{
+  /* .footer{
     display: none !important;
-  }
+  } */
 }
 
 /*************** Contact ********************/
@@ -657,18 +691,7 @@ title{
   color: var(--fifth-color);
 }
 
-/**************** Footer ********************/
 
-.footer{
-  display: flex;
-  background-color: var(--first-color);
-  color: var(--fifth-color) !important;
-  width: 200px;
-  text-align: center;
-  height: 40px;
-  align-items: center;
-  justify-content: center;
-}
 
 /**************** Travaux ***************/
 
