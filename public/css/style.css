@@ -346,12 +346,13 @@ body a:visited{
 
 @media screen and (max-width: 768px){
   .home-container{ padding-left: 0 !important; padding-top: 100px;}
-	.rw-sentence > span:first-child { font-size: 200%; left: 30px;}
-	.rw-sentence > span:nth-child(2) { font-size: 100%; top: 60px; left: 55px; }
-	.rw-sentence > span:nth-child(3) { top: 76px; left: 10px; font-size: 120%; }
-	.rw-words { width: auto; left: 100px; top: 86px; }
-	.rw-words span { font-size: 120%; left: 40px;}
-	.rw-sentence > span:last-child { top: 130px; left: 10px; font-size: 130%; }
+  .rw-wrapper{ display: flex; justify-content: center;}
+	.rw-sentence > span:first-child { font-size: 200%; left: 0px; justify-content: center;}
+	.rw-sentence > span:nth-child(2) { font-size: 100%; top: 60px; left: 0px; }
+	.rw-sentence > span:nth-child(3) { top: 76px; left: 0px; font-size: 120%; }
+	.rw-words { width: auto; left: 0px; top: 86px; }
+	.rw-words span { font-size: 120%; left: 0px;}
+	.rw-sentence > span:last-child { top: 130px; left: 0px; font-size: 130%; }
 }
 
 /*************** A propos *******************/
